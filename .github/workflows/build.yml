@@ -33,7 +33,7 @@ jobs:
           retention-days: 1
 
   tiecd-build-arm64:
-    runs-on: [self-hosted, linux, ARM64]
+    runs-on: ubuntu-latest
     container:
       image: "ghcr.io/brentspoken/dart-linux:latest"
     steps:
@@ -108,7 +108,7 @@ jobs:
   # as cekit doesn't currently support buildx
 
   image-build-multi-arch:
-    runs-on: ubuntu-latest
+    runs-on: amd64/ubuntu-latest
 
     needs: [tiecd-build-amd64, tiecd-build-arm64]
 
