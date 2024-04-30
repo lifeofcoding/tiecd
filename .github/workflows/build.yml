@@ -108,7 +108,7 @@ jobs:
   # as cekit doesn't currently support buildx
 
   image-build-multi-arch:
-    runs-on: amd64/ubuntu-latest
+    runs-on: ubuntu-latest
 
     needs: [tiecd-build-amd64, tiecd-build-arm64]
 
