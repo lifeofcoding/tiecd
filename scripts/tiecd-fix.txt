@@ -1,2 +1,2 @@
 ARG TARGETPLATFORM
-COPY tiecd.arm64 /usr/bin/
+#COPY tiecd.arm64 /usr/bin/

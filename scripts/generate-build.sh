@@ -13,7 +13,7 @@ cp oss_licenses.json images/modules/base/build/.
 # just use cekit to build dockerfile then use buildx to build multi arch image
 cekit --descriptor images/$1.yaml build --dry-run docker
 cp scripts/tiecd-fix.txt target/image
-cp tiecd.arm64 target/image
+#cp tiecd.arm64 target/image
 cd target/image
 sed -i  '/FROM /r tiecd-fix.txt' Dockerfile 
 sed -i '/FROM /s/$/ as big_image/' Dockerfile
