@@ -75,7 +75,7 @@ class NodeProject extends ProjectProvider {
     if (version.isNotNullNorEmpty) {
       definition.from = 'node:$version-alpine';
     } else {
-      definition.from = 'node:20-alpine';
+      definition.from = 'lifeofcoding/node23-spoken:latest';
     }
     return definition;
   }
