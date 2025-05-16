@@ -93,7 +93,7 @@ jobs:
           password: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Install CEKit
-        uses: cekit/actions-setup-cekit@v1.1.5
+        uses: cekit/actions-setup-cekit@v1.1.7
 
       - name: Save Tags
         run: echo "${{ steps.meta.outputs.tags }}" >> tags.txt
