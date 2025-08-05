@@ -48,7 +48,7 @@ class NextJSProject extends NodeProject {
   static ImageDefinition defaultImageDefinition() {
     ImageDefinition definition = NodeProject.defaultImageDefinition();
     definition.expose = ['3000'];
-    definition.cmd = ['node', '--max_old_space_size=10240', 'server.js'];
+    definition.cmd = ['node', '--max-old-space-size=10240', 'server.js'];
     definition.workdir = '/app';
     definition.env = ['NODE_ENV=production','HOSTNAME=0.0.0.0','NEXT_TELEMETRY_DISABLED=1', 'NODE_OPTIONS=--max-old-space-size=10240'];
     definition.label = ['tiecd.image.type=nextjs'];
