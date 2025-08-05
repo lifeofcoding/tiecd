@@ -1,0 +1,8 @@
+schema_version: 1
+version: 1.0.0
+name: build-essential
+description: "Add the build-essential package"
+packages:
+  manager: apt-get
+  install:
+    - build-essential
