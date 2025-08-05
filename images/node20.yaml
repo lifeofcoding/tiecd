@@ -19,3 +19,4 @@ modules:
     - name: node
     - name: yarn
     - name: pnpm
+    - name: build-essential
