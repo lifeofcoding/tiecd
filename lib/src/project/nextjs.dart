@@ -50,7 +50,7 @@ class NextJSProject extends NodeProject {
     definition.expose = ['3000'];
     definition.cmd = ['node', '--max_old_space_size=10240', 'server.js'];
     definition.workdir = '/app';
-    definition.env = ['NODE_ENV=production','HOSTNAME=0.0.0.0','NEXT_TELEMETRY_DISABLED=1'];
+    definition.env = ['NODE_ENV=production','HOSTNAME=0.0.0.0','NEXT_TELEMETRY_DISABLED=1', 'NODE_OPTIONS=--max-old-space-size=10240'];
     definition.label = ['tiecd.image.type=nextjs'];
     definition.copy = ['.next/standalone /app','.next/static /app/.next/static','public /app/public'];
     return definition;
